@@ -1,0 +1,35 @@
+{% load static from staticfiles %}
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<script>
+  var data = {{ data|safe }};
+</script>
+
+<div class="container"> 
+
+	<div align="center">
+ <img src="{% static 'img/gestao.png'%}" class="img-responsive img-rounded" height="402" width="402"> 
+ </div>
+<h3> Resultados encontrados: </h3> 
+
+<div class="list-group">
+{% for i in obj %}
+
+
+
+<p> <a href="/body/{{i.number}}" class="list-group-item"> {{i.short_description}}  </a> </p> 
+
+
+
+{% endfor %}
+<div> 
+
+</div> 
