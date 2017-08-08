@@ -6,6 +6,8 @@ from django.conf import settings
 
 
 urlpatterns = [
+
+	
 	
 	url(r'^$', views.index),
 	url(r'^resultado/(?P<texto>[\w-]+)', views.resultado, name="resultado"),
