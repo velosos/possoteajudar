@@ -126,10 +126,16 @@ STATIC_URL = '/static/'
 
 STATIC_ROOT = BASE_DIR.child('staticfiles',)
 
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "static"),
-    '/var/www/static/',
-]
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, "getKbs/static"),
+    )
+print  os.path.join(BASE_DIR, "getKbs/static")
+STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
+
+STATICFILES_FINDERS = (
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+    )
 
 
 

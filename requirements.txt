@@ -13,3 +13,4 @@ static==1.0.2
 dj-database-url==0.2.2
 django-decouple==2.1
 Unipath==1.0
+wsgiref==0.1.2
