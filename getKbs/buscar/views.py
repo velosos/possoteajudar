@@ -21,7 +21,7 @@ def resultado(request,texto):
 
     texto = request.POST.get('texto')
 	# Set the request parameters
-    url = 'https://homologglobo.service-now.com/api/now/table/kb_knowledge?sysparm_query=short_descriptionLIKE' + texto
+    url = 'https://devglobo.service-now.com/api/now/table/kb_knowledge?sysparm_query=short_descriptionLIKE' + texto
 
 # Eg. User name="admin", Password="admin" for this code sample.
     user = 'getkbs'
@@ -55,7 +55,7 @@ def body(request,protocolo):
 
 
 	# Set the request parameters
-    url = 'https://homologglobo.service-now.com/api/now/table/kb_knowledge?sysparm_query=number='+protocolo
+    url = 'https://devglobo.service-now.com/api/now/table/kb_knowledge?sysparm_query=number='+protocolo
 
 # Eg. User name="admin", Password="admin" for this code sample.
     user = 'getkbs'
