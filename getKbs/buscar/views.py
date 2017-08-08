@@ -42,6 +42,9 @@ def resultado(request,texto):
     #print data
 
     print(data)
+
+    proxy = urllib2.ProxyHandler({'https': 'http://proxy.globoi.com:3128'})     
+		
     
 
     return render(request, 'resultado.html',{'obj':data['result']})     
@@ -73,6 +76,8 @@ def body(request,protocolo):
     #print data
 
     print(data)
+
+    proxy = urllib2.ProxyHandler({'https': 'http://proxy.globoi.com:3128'})    
 
     return render(request, 'body.html',{'obj':data['result']})
 
