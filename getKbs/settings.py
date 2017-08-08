@@ -25,7 +25,9 @@ SECRET_KEY = 'bfa9noi9z*!)&bk7um#5l*j5k@uq15qthoibe!iu+4vsm-03se'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.localhost', '127.0.0.1','.cloud.globoi.com']
+
+
 
 
 # Application definition
