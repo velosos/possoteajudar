@@ -48,7 +48,7 @@ def resultado(request,texto):
 		
     
 
-    return render(request, 'resultado.html',{'obj':data['result']})     
+    return render(proxy,request, 'resultado.html',{'obj':data['result']})     
 
 
 def body(request,protocolo):
@@ -80,6 +80,6 @@ def body(request,protocolo):
 
     proxy = urllib2.ProxyHandler({'https': 'http://proxy.globoi.com:3128'})    
 
-    return render(request, 'body.html',{'obj':data['result']})
+    return render(proxy,request, 'body.html',{'obj':data['result']})
 
 
