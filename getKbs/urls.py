@@ -7,9 +7,10 @@ from django.conf import settings
 
 urlpatterns = [
 
-	
+
 	
 	url(r'^$', views.index),
+	url(r'^index.html$', views.index, name="index"),
 	url(r'^resultado/(?P<texto>[\w-]+)', views.resultado, name="resultado"),
 	url(r'^body/(?P<protocolo>[\w-]+)', views.body, name="body"),
     url(r'^admin/', admin.site.urls),

@@ -29,6 +29,13 @@
 
 <link rel="stylesheet" type="text/css" href="{% static 'css/search.css'%}">
 
+ 
+
+
+
+ 
+ 
+
 
 </head>
 
@@ -50,28 +57,35 @@
 
 </div>
 
-				<div class="main-login main-center">
+				<div style="margin-top: 30px;
+    margin: 0 auto;
+    max-width: 400px;
+    padding: 10px 40px;
+    background: #009edf;
+    color: #FFF;
+    text-shadow: none;">
 
-					<div align="center">
- <img src="http://s2.glbimg.com/VBVawFAamUGU1UxSPes8nrEfoMM=/fit-in/134x134/s.glbimg.com/gl/at/f/photo_static/original/2017/08/08/copia_de_icone.png" class="img-responsive img-rounded" height="202" width="202"> 
+					<div align="left">
+ <img src="http://s2.glbimg.com/VBVawFAamUGU1UxSPes8nrEfoMM=/fit-in/134x134/s.glbimg.com/gl/at/f/photo_static/original/2017/08/08/copia_de_icone.png" class="img-responsive img-rounded" height="122" width="122"> 
  </div>
 
 
-				<h4 align="center">Posso te ajudar?</h4>
+				
 					<form action="/resultado/texto" method="post">
 						
 						<div class="form-group">
 							
 							<div class="cols-sm-10">
 								<div class="input-group">
-									<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+									<span class="input-group-addon"><span class="glyphicon glyphicon-console
+" aria-hidden="true"></span></i></span>
 									<input type="text" class="form-control" name="texto" id="name"  placeholder="Digite sua dúvida. Ex: Matéria"/>
 								</div>
 							</div>
 						</div>
 
 						
-
+ 						
 					
 
 						<div class="form-group ">
@@ -82,6 +96,29 @@
 				</div>
 			</div>
 		</div>
+
+
+<div>
+
+
+
+</div>
+
+
+
+<h1 id="here"></h1> 
+
+<script type="text/javascript" src="{% static 'js/eu-posso-ajudar.js'%}">
+
+
+</script>
+
+
+
+
+ 
+ 
+
 
 </body>
 

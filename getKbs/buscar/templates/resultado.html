@@ -14,23 +14,52 @@
 </script>
 
 <div class="container"> 
+   <div class="row"> 
 
+	<div align="left">
+ <img src="http://s2.glbimg.com/ihC0VktkJIutrmQ9c3_n51bKVVw=/fit-in/134x134/s.glbimg.com/gl/at/f/photo_static/original/2017/08/08/icone_gestao_de_atendimento-04.png" class="img-responsive img-rounded" height="122" width="122"> 
 
-	<div align="center">
- <img src="http://s2.glbimg.com/VBVawFAamUGU1UxSPes8nrEfoMM=/fit-in/134x134/s.glbimg.com/gl/at/f/photo_static/original/2017/08/08/copia_de_icone.png" class="img-responsive img-rounded" height="202" width="202"> 
  </div>
-<h3> Resultados encontrados: </h3> 
-
-<div class="list-group">
-{% for i in obj %}
 
 
+<h4> Resultados encontrados: </h4> 
 
-<p> <a href="/body/{{i.number}}" class="list-group-item"> {{i.short_description}}  </a> </p> 
+<br/> 
+
+
+  
+   {% for i in obj %}
+
+   
+   <div class="list-group">
+   
+    <h4 class="list-group-item-heading"> <a href="/body/{{i.number}}" class=""> 
+    	
+
+    	<span class="glyphicon glyphicon-chevron-right
+" aria-hidden="true"></span> {{i.short_description}}  
+    
+
+    </a></h4>
+    
+     
+
+    
+</div>
+
+  {% endfor %}
+
+
+ 
+<a href="/"> 
+<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+ Voltar 
+</a>
 
 
 
-{% endfor %}
+
+<div> 
 <div> 
 
 </div> 

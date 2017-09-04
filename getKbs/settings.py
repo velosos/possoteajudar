@@ -15,7 +15,10 @@ from unipath import Path
 BASE_DIR = Path(__file__).parent
 
 
-os.environ['https_proxy'] = 'http://proxy.globoi.com:3128'
+
+
+
+
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 #BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -25,15 +28,13 @@ os.environ['https_proxy'] = 'http://proxy.globoi.com:3128'
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'bfa9noi9z*!)&bk7um#5l*j5k@uq15qthoibe!iu+4vsm-03se'
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
 ALLOWED_HOSTS = ['.localhost', '127.0.0.1','.cloud.globoi.com']
-
-
-
+    
 
 # Application definition
 
@@ -125,14 +126,14 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
-STATIC_URL = '/static/'
+STATIC_URL = '/buscar/static/'
 
-STATIC_ROOT = BASE_DIR.child('staticfiles',)
+STATIC_ROOT = BASE_DIR.child('staticfiles')
 
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, "static"),
+    os.path.join(BASE_DIR, "buscar/static"),
     )
-print  os.path.join(BASE_DIR, "static")
+
 STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
 
 STATICFILES_FINDERS = (
