@@ -1,16 +1,16 @@
 # possoteajudar
 
-App de integração das knowledge base (Kbs) da ServiceNow para ser usado como base de ajuda em uma App interna do cliente.
+ServiceNow's knowledge base integration (Kbs) app to be used as a help base in an internal customer app.
 
-Feita em Python/Django, trata-se de um buscador que consome a ServiceNow e imprime o resultado em uma outra App.
+Made in Python / Django, it is a search engine that consumes a ServiceNow and prints the result in another App.
 
-Exemplos:
+Examples:
 
-*Página com o buscador:*
+Page with the search engine:
 
-Na **views.py** crio uma *def* onde faço um GET na api da ServiceNow, que me retorna os resultados em formato JSON, a partir dai, em outras *def*, consigo manipular as rotas com os resultados esperados.
+In views.py I create a def where I do a GET in the ServiceNow api, which returns the results in JSON format, from there, in other defs, I can manipulate the routes with the expected results.
 
-Veja o exemplo:
+See the example:
 
 ```
 def resultado(request,texto):
